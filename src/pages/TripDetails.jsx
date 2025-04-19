@@ -1,0 +1,1 @@
+// Full info for a selected trip (weather, currency, checklist).
