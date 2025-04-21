@@ -63,14 +63,9 @@ function Navbar() {
           >
             Trip List
           </NavLink>
-          <NavLink
-            to="/ai-assistant"
-            className={({ isActive }) =>
-              isActive ? `${baseStyle} ${activeStyle}` : baseStyle
-            }
-          >
+          <Link to="/ai-assistant" className="hover:text-[#C1AA7F] transition">
             AI Assistant
-          </NavLink>
+          </Link>
         </div>
       </div>
     </nav>
