@@ -63,9 +63,6 @@ function Navbar() {
           >
             Trip List
           </NavLink>
-          <Link to="/ai-assistant" className="hover:text-[#C1AA7F] transition">
-            AI Assistant
-          </Link>
         </div>
       </div>
     </nav>
