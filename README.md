@@ -1,12 +1,32 @@
-# React + Vite
+# 🌍 PlanMyTrip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**PlanMyTrip** is a smart travel companion web application that helps users discover popular destinations, create travel plans, and get inspired through travel-related posts. Designed with a beautiful UI and easy-to-use features, it makes travel planning seamless and fun.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🎥 Hero section with a video banner and inspiring travel quote
+- 🧭 Navigation to key sections: Home, Places to Visit, Posts, Create Trip, Trip List
+- 🗂 Create and manage your trips
+- 📷 Posts section showcasing popular destinations and travel content
+- 📍 API integration for exploring places and inspiration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS
+- **Routing:** React Router DOM
+- **Media:** Embedded video and image assets
+- **APIs Used:**
+  - **OpenTripMap API** – for fetching popular places and travel-related posts
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/PlanMyTrip.git
+   cd PlanMyTrip
