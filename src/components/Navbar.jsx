@@ -1,14 +1,11 @@
-// This component renders the top navigation bar with logo and links to all main pages beautifully spaced.
-
-// Colors:
-// Primary - #C1AA7F
-// Secondary - #24282B
-
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/logo2.jpg"; // Ensure correct path
+import { NavLink } from "react-router-dom";
+import logo from "../assets/logo2.jpg";
 
 function Navbar() {
+  const baseStyle = "hover:text-[#C1AA7F] transition";
+  const activeStyle = "text-[#C1AA7F] underline underline-offset-4";
+
   return (
     <nav className="w-full bg-[#C1AA7F] text-white shadow-md">
       {/* Top Section: Logo + Brand Name */}
@@ -26,24 +23,54 @@ function Navbar() {
       {/* Bottom Navigation Bar */}
       <div className="w-full bg-[#24282B] text-white flex justify-center px-6 py-4 text-sm md:text-base font-medium">
         <div className="flex flex-wrap justify-center gap-x-10 gap-y-2">
-          <Link to="/" className="hover:text-[#C1AA7F] transition">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? `${baseStyle} ${activeStyle}` : baseStyle
+            }
+          >
             Home
-          </Link>
-          <Link to="/placesToVisit" className="hover:text-[#C1AA7F] transition">
+          </NavLink>
+          <NavLink
+            to="/placesToVisit"
+            className={({ isActive }) =>
+              isActive ? `${baseStyle} ${activeStyle}` : baseStyle
+            }
+          >
             Places To Visit
-          </Link>
-          <Link to="/posts" className="hover:text-[#C1AA7F] transition">
+          </NavLink>
+          <NavLink
+            to="/posts"
+            className={({ isActive }) =>
+              isActive ? `${baseStyle} ${activeStyle}` : baseStyle
+            }
+          >
             Posts
-          </Link>
-          <Link to="/create-trip" className="hover:text-[#C1AA7F] transition">
+          </NavLink>
+          <NavLink
+            to="/create-trip"
+            className={({ isActive }) =>
+              isActive ? `${baseStyle} ${activeStyle}` : baseStyle
+            }
+          >
             Create Trip
-          </Link>
-          <Link to="/trip-list" className="hover:text-[#C1AA7F] transition">
+          </NavLink>
+          <NavLink
+            to="/trip-list"
+            className={({ isActive }) =>
+              isActive ? `${baseStyle} ${activeStyle}` : baseStyle
+            }
+          >
             Trip List
-          </Link>
-          <Link to="/ai-assistant" className="hover:text-[#C1AA7F] transition">
+          </NavLink>
+          <NavLink
+            to="/ai-assistant"
+            className={({ isActive }) =>
+              isActive ? `${baseStyle} ${activeStyle}` : baseStyle
+            }
+          >
             AI Assistant
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>
